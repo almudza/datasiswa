@@ -16,10 +16,10 @@ class SiswaController extends Controller
     public function index()
     {
         //
-        $halaman = 'siswa';
+
         $siswa_list = Siswa::all()->sortBy('nama');
         $jumlah_siswa = $siswa_list->count();
-        return view('siswa.index', compact('halaman', 'siswa_list', 'jumlah_siswa'));
+        return view('siswa.index', compact( 'siswa_list', 'jumlah_siswa'));
     }
 
     /**
@@ -30,8 +30,8 @@ class SiswaController extends Controller
     public function create()
     {
         //
-        $halaman = 'siswa';
-        return view('siswa.create', compact('halaman'));
+
+        return view('siswa.create');
     }
 
     /**
@@ -43,14 +43,9 @@ class SiswaController extends Controller
     public function store(Request $request)
     {
         //
-/*        $siswa = new \App\Siswa;
-        $siswa->nis = $request->nis;
-        $siswa->nama = $request->nama;
-        $siswa->tgl_lahir = $request->tgl_lahir;
-        $siswa->jenis_kelamin = $request->jenis_kelamin;
-        $siswa->save();*/ /*untuk satuan*/
+
         Siswa::create($request->all());
-        return redirect('admin/siswa');
+        return redirect('siswa');
     }
 
     /**
@@ -62,9 +57,9 @@ class SiswaController extends Controller
     public function show($id)
     {
         //
-        $halaman = 'siswa';
+
         $siswa = Siswa::findOrFail($id);
-        return view('siswa.show', compact('halaman', 'siswa'));
+        return view('siswa.show', compact('siswa'));
     }
 
     /**
