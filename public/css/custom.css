@@ -337,19 +337,48 @@ span.required {
 
 /*table bottom siswa*/
 
-.table-bottom {
-    height: 40px;
-    padding: 10px 0;
+.table-nav, .tombol-nav {
+    display: block;
+    clear: both;
+/*    float: left;*/
+    width: 100%;
+}
+
+.tombol-nav {
+    margin-top: 10px;
+
+}
+.table-nav {
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
 
 }
 
-.bottom-nav {
-    margin-top: 20px;
+.jumlah-data, .paging {
+    width: 50%;
+    height: 50%;
+    display: block;
 
 }
 
+.jumlah-data {
+    float: left;
+    padding-top: 15px;
+}
+
+.paging {
+    float: right;
+    text-align: right;
+}
+
+.paging ul.pager, .paging ul.pagination {
+    text-align: right;
+
+}
+
+ul.pagination, ul.pager {
+    margin-top: 8px;
+}
 h2  {
     border-bottom: 1px solid #000;
 }

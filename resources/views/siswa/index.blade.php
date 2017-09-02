@@ -47,20 +47,20 @@
 	@endif
 <hr>
 	
-	<div class="table-bottom">
-		<div class="pull-left">
+	<div class="table-nav">
+		<div class="jumlah-data">
 			<strong>Jumlah Siswa :{{ $jumlah_siswa }} </strong>
 		</div>
-		<div class="pull-right">
-			Pagination
+		<div class="paging">
+			{{ $siswa_list->links() }}
 		</div>
 	</div>
 
-	<div class="bottom-nav">
-		<div>
+	<div class="tombol-nav">
+		
 			<a href="{{ url('admin/siswa/create') }}" class="btn btn-primary">
 			Tambah Siswa</a>
-		</div>
+		
 	</div>
 
 @endsection

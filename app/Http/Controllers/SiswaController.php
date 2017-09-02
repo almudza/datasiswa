@@ -17,8 +17,8 @@ class SiswaController extends Controller
     {
         //
 
-        $siswa_list = Siswa::all()->sortBy('nama');
-        $jumlah_siswa = $siswa_list->count();
+        $siswa_list = Siswa::orderBy('nama', 'asc')->Paginate(1);
+        $jumlah_siswa = Siswa::count();
         return view('siswa.index', compact( 'siswa_list', 'jumlah_siswa'));
     }
 
