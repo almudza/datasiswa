@@ -23,7 +23,9 @@ Route::get('admin/siswa', 'SiswaController@index'); // tampil index
 Route::get('admin/siswa/create', 'SiswaController@create'); //buat
 Route::get('admin/siswa/{siswa}', 'SiswaController@show'); //detail
 Route::post('admin/siswa', 'SiswaController@store'); //kirim data
-
+Route::get('admin/siswa/{siswa}/edit', 'SiswaController@edit'); //edit
+Route::patch('admin/siswa/{siswa}', 'SiswaController@update'); //update
+Route::delete('admin/siswa/{siswa}', 'SiswaController@destroy'); //delete
 
 /*halaman-rahasia*/
 Route::get('halaman-rahasia', [

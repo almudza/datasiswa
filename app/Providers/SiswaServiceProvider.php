@@ -16,7 +16,7 @@ class SiswaServiceProvider extends ServiceProvider
     {
         //
         $halaman = '';
-        if (Request::segment(2) == 'siswa') { //secment = almat stlh admin jd siswa
+        if (Request::segment(2) == 'siswa') { //secment = almat untuk (admin/siswa)
             $halaman = 'siswa';
         }
         view()->share('halaman', $halaman);
