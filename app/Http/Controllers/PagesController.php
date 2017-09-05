@@ -10,7 +10,7 @@ class PagesController extends Controller
     //
     public function home()
     {
-    	$halaman = '/';
+    	$halaman = 'home';
         $siswa_list = Siswa::all()->sortByDesc('nama');
         $jumlah_siswa = $siswa_list->count();
     	return view('pages.index', compact('halaman', 'siswa_list', 'jumlah_siswa'));
@@ -19,7 +19,7 @@ class PagesController extends Controller
     public function about()
     {
     	$halaman = 'about';
-    	return view('pages.about', compact('halaman'));
+    	return view('pages.about');
 
     }
 }

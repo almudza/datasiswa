@@ -17,7 +17,7 @@ class SiswaController extends Controller
     {
         //
 
-        $siswa_list = Siswa::orderBy('nama', 'asc')->Paginate(1);
+        $siswa_list = Siswa::orderBy('nama', 'asc')->Paginate(10);
         $jumlah_siswa = Siswa::count();
         return view('siswa.index', compact( 'siswa_list', 'jumlah_siswa'));
     }
@@ -102,5 +102,25 @@ class SiswaController extends Controller
         $siswa = Siswa::findOrFail($id);
         $siswa->delete();
         return redirect('admin/siswa');
+    }
+
+    public function tesCollection()
+    {
+        $collection = Siswa::all();
+        $jumlah = $collection->count();
+        return 'Jumlah : '. $jumlah;
+    }
+
+    //dateMutator
+    public function dateMutator()
+    {
+        $siswa = Siswa::findOrFail(4);
+        $str = 'Tanggal Lahir : '.
+            $siswa->tgl_lahir->format('d-m-Y'). '<br>' .
+            'Ulang Tahun ke 30 akan jatuh pada tanggal : ' .
+            '<strong>' .
+            $siswa->tgl_lahir->addYears(30)->format('d-m-Y').
+            '</strong>';
+            return $str;
     }
 }

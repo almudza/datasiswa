@@ -1,4 +1,4 @@
-<div class="form-group">
+0<div class="form-group">
 	{!! Form::label('nis', 'NISN:', ['class' => 'control-label']) !!}
 	{!! Form::text('nis', null, ['class' => 'form-control']) !!}
 </div>
@@ -10,7 +10,8 @@
 
 <div class="form-group">
 	{!! Form::label('tgl_lahir', 'Tgl Lahir:' ,['class' => 'control-label']) !!}
-	{!! Form::date('tgl_lahir', null, ['class' => 'form-control', 'id' => 'tgl_lahir']) !!}
+	{!! Form::date('tgl_lahir', !empty($siswa) ?
+	$siswa->tgl_lahir->format('Y-m-d'): null, ['class' => 'form-control', 'id' => 'tgl_lahir']) !!}
 </div>
 
 <div class="form-group">

@@ -15,7 +15,7 @@
 	</tr>
 	<tr>
 		<th>Tgl Lahir</th>
-		<td>{{ $siswa->tgl_lahir }} </td>
+		<td>{{ $siswa->tgl_lahir->format('d-m-Y') }} </td>
 	</tr>
 	<tr>
 		<th>Jenis Kelamain</th>

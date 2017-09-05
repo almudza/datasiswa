@@ -22,7 +22,7 @@
 				<tr>
 					<td>{{ $siswa->nis }} </td>
 					<td>{{ $siswa->nama }} </td>
-					<td>{{ $siswa->tgl_lahir }} </td>
+					<td>{{ $siswa->tgl_lahir->format('d-m-Y') }} </td>
 					<td>{{ $siswa->jenis_kelamin }} </td>
 					<td>
 						<div class="box-button">

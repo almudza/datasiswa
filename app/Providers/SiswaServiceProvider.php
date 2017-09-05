@@ -16,8 +16,17 @@ class SiswaServiceProvider extends ServiceProvider
     {
         //
         $halaman = '';
-        if (Request::segment(2) == 'siswa') { //secment = almat untuk (admin/siswa)
+
+        if (Request::segment(1) =='/') {
+            $halaman = 'home';
+        }
+
+        if (Request::segment(2) == 'siswa') { //segment = almat untuk (admin/siswa)
             $halaman = 'siswa';
+        }
+
+        if (Request::segment(1) =='about') {
+            $halaman = 'about';
         }
         view()->share('halaman', $halaman);
     }

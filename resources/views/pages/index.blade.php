@@ -22,9 +22,9 @@
 				<tr>
 					<td>{{ $siswa->nis }} </td>
 					<td>{{ $siswa->nama }} </td>
-					<td>{{ $siswa->tgl_lahir }} </td>
+					<td>{{ $siswa->tgl_lahir->format('d-m-Y') }} </td>
 					<td>{{ $siswa->jenis_kelamin }} </td>
-					<td>{{ link_to('siswa/' . $siswa->id, 'Detail', ['class' => 'btn btn-success btn-sm']) }} </td>
+					<td>{{ link_to('admin/siswa/' . $siswa->id, 'Detail', ['class' => 'btn btn-success btn-sm']) }} </td>
 				</tr>
 				@endforeach
 			</tbody>

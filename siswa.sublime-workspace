@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"Sis",
+				"Siswa"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
 				"edit",
 				"edit"
 			],
@@ -40,46 +48,19 @@
 	"buffers":
 	[
 		{
-			"file": "resources/views/siswa/index.blade.php",
+			"file": "/C/Users/mudza/Documents/Template/footer.php",
 			"settings":
 			{
-				"buffer_size": 1143,
+				"buffer_size": 1447,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "routes/web.php",
+			"contents": "\t\t\t\t<?php printf( __( 'Proudly powered by %s', 'giga-store' ), '<a href=\"' . esc_url( __( 'https://wordpress.org/', 'giga-store' ) ) . '\">WordPress</a>' ); ?>\n\t\t\t\t<span class=\"sep\"> | </span>\n\t\t\t\t<?php printf( __( 'Theme: %1$s by %2$s', 'giga-store' ), '<a href=\"http://themes4wp.com/theme/giga-store\" title=\"' . esc_attr__( 'Free WooCommerce WordPress Theme', 'giga-store' ) . '\">Giga Store</a>', 'Themes4WP' ); ?>\n\n\n\t\t\t\t<span class=\"sep\"> | </span>\n\t\t\t\t\t<?php printf( __( 'Theme: %1$s by %2$s', 'alpha-store' ), '<a href=\"' . esc_url( \"http://themes4wp.com/theme/alpha-store\" ) . '\" title=\"Free WooCommerce WordPress Theme\">Alpha Store</a>', 'Themes4WP' ); ?>",
 			"settings":
 			{
-				"buffer_size": 1124,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/Http/Controllers/SiswaController.php",
-			"settings":
-			{
-				"buffer_size": 2072,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "resources/views/siswa/edit.blade.php",
-			"settings":
-			{
-				"buffer_size": 604,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "resources/views/siswa/create.blade.php",
-			"settings":
-			{
-				"buffer_size": 1126,
+				"buffer_size": 661,
 				"line_ending": "Windows"
 			}
 		}
@@ -123,31 +104,34 @@
 		"/C/Users/mudza/Documents/Project/siswa",
 		"/C/Users/mudza/Documents/Project/siswa/app",
 		"/C/Users/mudza/Documents/Project/siswa/app/Http",
-		"/C/Users/mudza/Documents/Project/siswa/app/Http/Controllers",
-		"/C/Users/mudza/Documents/Project/siswa/database",
-		"/C/Users/mudza/Documents/Project/siswa/database/migrations",
 		"/C/Users/mudza/Documents/Project/siswa/resources",
 		"/C/Users/mudza/Documents/Project/siswa/resources/views",
+		"/C/Users/mudza/Documents/Project/siswa/resources/views/pages",
 		"/C/Users/mudza/Documents/Project/siswa/resources/views/partial",
 		"/C/Users/mudza/Documents/Project/siswa/resources/views/siswa",
 		"/C/Users/mudza/Documents/Project/siswa/routes"
 	],
 	"file_history":
 	[
-		"/C/Users/mudza/Documents/Project/siswa/config/app.php",
-		"/C/Users/mudza/Documents/Project/siswa/app/Http/Controllers/SiswaController.php",
+		"/C/Users/mudza/Documents/Project/siswa/app/Http/Controllers/PagesController.php",
+		"/C/Users/mudza/Documents/Project/siswa/routes/web.php",
+		"/C/Users/mudza/Documents/Project/siswa/resources/views/partial/_navbar.blade.php",
 		"/C/Users/mudza/Documents/Project/siswa/app/Providers/SiswaServiceProvider.php",
+		"/C/Users/mudza/Documents/Project/siswa/resources/views/pages/index.blade.php",
+		"/C/Users/mudza/Documents/Project/siswa/app/Providers/PageServiceProvider.php",
+		"/C/Users/mudza/Documents/Project/siswa/app/Http/Controllers/SiswaController.php",
+		"/C/Users/mudza/Documents/shop-isle.1.1.20/shop-isle/README.md",
+		"/C/Users/mudza/Documents/Project/siswa/public/css/custom.css",
+		"/C/Users/mudza/Documents/Project/siswa/resources/views/siswa/edit.blade.php",
+		"/C/Users/mudza/Documents/Project/siswa/resources/views/siswa/create.blade.php",
+		"/C/Users/mudza/Documents/Project/siswa/resources/views/siswa/index.blade.php",
+		"/C/Users/mudza/Documents/Project/siswa/resources/views/siswa/form.blade.php",
+		"/C/Users/mudza/Documents/Project/siswa/config/app.php",
 		"/C/Users/mudza/Documents/Project/siswa/app/Siswa.php",
 		"/C/Users/mudza/Documents/Project/siswa/resources/views/main.blade.php",
-		"/C/Users/mudza/Documents/Project/siswa/routes/web.php",
-		"/C/Users/mudza/Documents/Project/siswa/resources/views/siswa/index.blade.php",
 		"/C/Users/mudza/Documents/Project/siswa/resources/views/siswa/show.blade.php",
-		"/C/Users/mudza/Documents/Project/siswa/resources/views/siswa/create.blade.php",
-		"/C/Users/mudza/Documents/Project/siswa/public/css/custom.css",
 		"/C/Users/mudza/Documents/Project/siswa/resources/views/partial/_head.blade.php",
 		"/C/Users/mudza/Documents/Project/siswa/resources/views/partial/_js.blade.php",
-		"/C/Users/mudza/Documents/Project/siswa/resources/views/partial/_navbar.blade.php",
-		"/C/Users/mudza/Documents/Project/siswa/app/Http/Controllers/PagesController.php",
 		"/C/Users/mudza/Documents/Project/siswa/app/Providers/AppServiceProvider.php",
 		"/C/Users/mudza/Documents/Project/siswa/database/migrations/2017_09_01_145500_create_table_siswa.php",
 		"/C/Users/mudza/Documents/Project/siswa/.env",
@@ -232,53 +216,52 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "resources/views/siswa/index.blade.php",
+					"file": "/C/Users/mudza/Documents/Template/footer.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1143,
+						"buffer_size": 1447,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								701,
-								701
+								1126,
+								711
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 300.0,
+						"translation.y": 159.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "routes/web.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1124,
+						"buffer_size": 661,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								908,
-								908
+								661,
+								661
 							]
 						],
 						"settings":
@@ -286,97 +269,10 @@
 							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 240.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/Http/Controllers/SiswaController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2072,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1606,
-								1606
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1200.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "resources/views/siswa/edit.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 604,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								582,
-								582
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax"
-						},
-						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "resources/views/siswa/create.blade.php",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 1126,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
 					"type": "text"
 				}
 			]
