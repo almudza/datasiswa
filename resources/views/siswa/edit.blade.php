@@ -9,6 +9,6 @@
 {!! Form::model($siswa, ['method' => 'PATCH', 'action' =>['SiswaController@update', $siswa->id]]) !!}
 	@include('siswa.form', ['submitButtonText' => 'Update Siswa'])
 {!! Form::close() !!}
-</div>
+
 
 @endsection

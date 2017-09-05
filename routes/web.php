@@ -19,13 +19,16 @@ Route::get('about', 'PagesController@about');
 
 
 /*route siswa*/
-Route::get('admin/siswa', 'SiswaController@index'); // tampil index
-Route::get('admin/siswa/create', 'SiswaController@create'); //buat
-Route::get('admin/siswa/{siswa}', 'SiswaController@show'); //detail
-Route::post('admin/siswa', 'SiswaController@store'); //kirim data
-Route::get('admin/siswa/{siswa}/edit', 'SiswaController@edit'); //edit
-Route::patch('admin/siswa/{siswa}', 'SiswaController@update'); //update
-Route::delete('admin/siswa/{siswa}', 'SiswaController@destroy'); //delete
+Route::group(['middleware' => ['web']], function () {
+	Route::get('admin/siswa', 'SiswaController@index'); // tampil index
+	Route::get('admin/siswa/create', 'SiswaController@create'); //buat
+	Route::get('admin/siswa/{siswa}', 'SiswaController@show'); //detail
+	Route::post('admin/siswa', 'SiswaController@store'); //kirim data
+	Route::get('admin/siswa/{siswa}/edit', 'SiswaController@edit'); //edit
+	Route::patch('admin/siswa/{siswa}', 'SiswaController@update'); //update
+	Route::delete('admin/siswa/{siswa}', 'SiswaController@destroy'); //delete
+});
+
 Route::get('date-mutator', 'SiswaController@dateMutator'); //mutator
 
 /*halaman-rahasia*/

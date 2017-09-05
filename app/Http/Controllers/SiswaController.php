@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers;
 
+
+use Validator; //validasi form
 use Illuminate\Http\Request;
 //use App\Http\Request; // nek diperlukan di lar 5.2
 use App\Siswa; //model dari siswa
+
 
 class SiswaController extends Controller
 {
@@ -44,7 +47,22 @@ class SiswaController extends Controller
     {
         //
 
-        Siswa::create($request->all());
+        $input = $request->all();
+
+        $validator = Validator::make($input, [
+            'nis' => 'required|string|size:4|unique:siswa,nis',
+            'nama' => 'required|string|max:30',
+            'tgl_lahir' => 'required|date',
+            'jenis_kelamin' => 'required|in:L,P',
+            ]);
+
+        if ($validator->fails()) {
+            return redirect('admin/siswa/create')
+            ->withInput()
+            ->withErrors($validator);
+        }
+
+        Siswa::create($input);
         return redirect('admin/siswa');
     }
 
@@ -86,6 +104,18 @@ class SiswaController extends Controller
     {
         //
         $siswa = Siswa::findOrFail($id);
+        $input = $request->all();
+
+        $validator = Validator::make($input, [
+            'nis' => 'required|string|size:4|unique:siswa,nis,' . $request->input('id'),
+            'nama' => 'required|string|max:30',
+            'tgl_lahir' => 'required|date',
+            'jenis_kelamin' => 'required|in:L,P',
+            ]);
+
+        if ($validator->fails()) {
+            return redirect('admin/siswa/'. $id . '/edit')->withInput()->withErrors($validator);
+        }
         $siswa->update($request->all());
         return redirect('admin/siswa');
     }
